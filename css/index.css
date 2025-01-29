@@ -1,0 +1,30 @@
+.bili-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px 24px;
+}
+
+.left-enter {
+    display: flex;
+}
+
+.left-enter .enter-title {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.left-enter .enter-title img {
+    max-width: 54px;
+    max-height: auto;
+    width: auto;
+    height: auto;
+}
+
+.left-enter .enter-title svg {
+    margin-right: 6px;
+}
+
