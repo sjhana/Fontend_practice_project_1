@@ -3,8 +3,10 @@
     align-items: center;
     width: 100%;
     padding: 0px 24px;
+    box-sizing: border-box;
 }
 
+/* nav 左侧入口 */
 .left-enter {
     display: flex;
 }
@@ -28,3 +30,52 @@
     margin-right: 6px;
 }
 
+/* nav 中间搜索 */
+.center-search-container {
+    display: flex;
+    flex: 1;
+    height: 40px;
+    padding: 0 48px 0 4px;
+    border-radius: 8px;
+    border: 1px solid #e3e5e7;
+    background-color: #f1f2f3;
+    align-items: center;
+    position: relative;
+}
+
+.center-search-container:hover {
+    background-color: #fff;
+}
+
+.center-search-container .nav-search-content {
+    display: flex;
+    height: 20px;
+    padding: 0 8px;
+    width: 100%;
+}
+
+.nav-search-content .nav-search-input {
+    flex: 1;
+    line-height: 20px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.center-search-container .nav-search-button {
+    position: absolute;
+    display: flex;
+    top: 4px;
+    right: 7px;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    justify-content: center;
+    line-height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.center-search-container .nav-search-button:hover {
+    background-color: #e3e5e7;
+}
