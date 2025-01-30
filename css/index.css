@@ -9,6 +9,7 @@
 /* nav 左侧入口 */
 .left-enter {
     display: flex;
+    min-width: 460px;
 }
 
 .left-enter .enter-title {
@@ -36,6 +37,7 @@
     flex: 1;
     height: 40px;
     padding: 0 48px 0 4px;
+    margin-left: 15px;
     border-radius: 8px;
     border: 1px solid #e3e5e7;
     background-color: #f1f2f3;
@@ -78,4 +80,76 @@
 
 .center-search-container .nav-search-button:hover {
     background-color: #e3e5e7;
+}
+
+/* nav 右侧入口 */
+
+.right-entry {
+    display: flex;
+    margin-left: 10px;
+    height: 50px;
+    align-items: center;
+}
+
+.right-entry .header-avatar {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    position: relative;
+}
+
+.right-entry .header-avatar a {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    background-color: #00aeec;
+    border: 2px solid #e3e5e7  ;
+    border-radius: 50%;
+}
+
+.right-entry .header-avatar a span {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.right-entry .right-entry-item {
+    min-width: 50px;
+    margin-right: 4px;
+}
+
+.right-entry .right-entry-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.right-entry-item a span {
+    font-size: 12px;
+}
+
+.right-entry .upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 90px;
+    margin-left: 8px;
+    border-radius: 6px;
+    border: 2px solid #fb7299;
+    background-color: #fb7299;
+    color: #fff;
+}
+
+.right-entry .upload svg {
+    margin-right: 4px;
+}
+
+.right-entry .upload:hover {
+    background-color: #ff7e9d;
 }
