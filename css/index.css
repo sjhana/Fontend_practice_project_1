@@ -307,3 +307,259 @@
 .right-channel-container .channel-item-right span {
     color: #61666d;
 }
+
+/* 推荐列表 */
+.main {
+    width: 100%;
+    padding: 0 140px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main .recommended-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding-right: 10px;
+}
+
+/* 推荐列表 侧边栏 */
+.main .recommended-sidebar {
+    position: absolute;
+    right: 90px;
+    top: 0;
+    width: 40px;
+    height: 82px;
+    border-radius: 6px;
+    border: 1px solid #e3e5e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main .recommended-sidebar:hover {
+    background-color: #f1f2f3;
+}
+
+.recommended-sidebar .sidebar-icon {
+    width: 12px;
+    height: 12px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+
+.recommended-sidebar .sidebar-title {
+    font-size: 12px;
+    word-spacing: 5px;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    padding-left: 2px;
+}
+
+/* 视频卡片 图片区域 */
+.main .recommended-card .card-image {
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main .card-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.main .recommended-card .img-mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 16px 8px 6px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.card-image .img-mask .state-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.img-mask .state-left svg {
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    margin-right: 4px;
+}
+
+.state-left .state-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* 视频卡片 底部信息区域 */
+.card-info {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.card-info .info-title {
+    line-height: 22px;
+    font-size: 15px;
+    /* height: 15px; */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-break: anywhere;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+.info-bottom {
+    display: flex;
+    margin-top: 4px;
+    font-size: 13px;
+}
+
+.info-bottom a {
+    color: #9499a0;
+    display: flex;
+    align-items: center;
+}
+
+.info-bottom a svg {
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+}
+
+.info-bottom .info-date {
+    margin-left: 4px;
+    color: #9499a0;
+}
+
+/* 轮播图 */
+.recommended-container .carousel-area {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-area img {
+    width: 100%;
+}
+
+/* 遮罩层 */
+.carousel-area .mask {
+    position: absolute;
+    width: 100%;
+    height: 392px;
+    top: 0;
+    background: linear-gradient(0, #ff944c 23%, transparent 35%);
+    border-radius: 6px;
+}
+
+.carousel-area .tools {
+    width: 100%;
+    position: absolute;
+    bottom: 94px;
+    left: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.carousel-area .tools a {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.carousel-area .tools ul {
+    display: flex;
+}
+
+.carousel-area .tools ul li {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: #fff6;
+    cursor: pointer;
+}
+
+.carousel-area .tools ul li.active {
+    width: 14px;
+    height: 14px;
+    margin: 1px;
+    background-color: #fff;
+}
+
+.carousel-area .tools .buttons {
+    position: absolute;
+    bottom: 23px;
+    right: 15px;
+    display: flex;
+}
+
+.tools button {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff1a;
+    border: none;
+}
+
+.tools button:last-child {
+    margin-right: 0;
+}
+
+.tools button svg {
+    width: 12px;
+    height: 12px;
+    color: #fff;
+}
+
+/* 侧边栏 */
+.main .sidebar {
+    position: fixed;
+    right: 90px;
+    bottom: 200px;
+}
+
+.sidebar .primary-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #e3e5e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sidebar .primary-btn:hover {
+    background-color: #f1f2f3;
+}
+
+.sidebar .primary-btn svg {
+    width: 24px;
+    height: 24px;
+}
